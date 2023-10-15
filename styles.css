@@ -1,0 +1,360 @@
+html,body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+p {
+  margin: 0px;
+}
+.main-container {
+ background-color: #f8f8ff;
+ height: 100%;
+ position: relative;
+}
+.body-container {
+  position: relative;
+  height: 100%;
+  margin-top: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.body-wrapper {
+  display: flex;
+}
+.body-content-left {
+  flex-basis: 30%;
+}
+.body-content-right {
+  flex-basis: 70%;
+  padding-left: 40px;
+}
+.form-input {
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  background-color: white;
+  height: 550px;
+}
+.checkbox-accept {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.email-subscribe-wrapper {
+  display: flex;
+  padding-top: 10px;
+  gap: 5px;
+}
+.body-title-box {
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #5a2c83;
+}
+.body-desc-box > div:nth-child(1) {
+  margin-bottom: 15px;
+}
+.footer-container {
+  background-image: linear-gradient(to right top, #e5b5d3, #dec0e3, #d7cbee, #d2d6f5, #d1e0f9, #ccddf5, #c7daf1, #c2d7ed, #b5c7e3, #abb7d8, #a3a6cc, #9d95be);
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-wrapper {
+  flex-direction: row;
+  display: flex;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 20%;
+  color: #5a2c83;
+}
+.footer-wrapper > .footer-content:nth-child(1) {
+  flex-basis: 15%;
+}
+.footer-wrapper > .footer-content:nth-child(4) {
+  flex-basis: 15%;
+}
+.footer-wrapper > .footer-content:nth-child(5) {
+  flex-basis: 40%;
+}
+.footer-content > div > p {
+  font-weight: 500;
+  margin-bottom: 3px;
+  font-size: 13px;
+  color: black;
+}
+.btn-sub {
+  background-color: #9d71c7;
+  border: 0px;
+  width: 120px
+}
+.copyright-text {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+}
+.bubble {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+.bubble-desktop-1 {
+  top: 3%;
+  left: -10%;
+  background-color: #d3bbe0;
+}
+.bubble-desktop-2 {
+  top: 78%;
+  left: 0%;
+  background-color: #ffd17f;
+}
+.bubble-desktop-3 {
+  top: 5%;
+  right: -8%;
+  background-color: #d0eaef;
+}
+.bubble-desktop-4 {
+  top: 50%;
+  right: -6%;
+  background-color: #cca5c6;
+}
+.follow-us {
+  margin-top: 10px; 
+  font-size: 13px;
+}
+.linkedin-icon {
+  margin-top: 5px;
+  font-size: 20px;
+}
+.form-check-input:checked {
+  background-color: #9d71c7 !important;
+  border-color: #9d71c7 !important;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 500px)  {
+  .main-container {
+    height: auto;
+  }
+  .body-wrapper {
+    flex-direction: column;
+  }
+  .body-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .body-content-right {
+    flex-basis: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .form-input {
+    height: 100%;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .label-check {
+    width: 200px;
+    font-size: 13px;
+  }
+  .checkbox-accept-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footer-container {
+    position: relative;
+    margin-top: 20px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  .footer-content > div {
+    text-align: center;
+  }
+  .footer-content > div > p {
+    display: none;
+  }
+  .sub-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .sub-text > div > p {
+    width: 236px;
+    color: black;
+    font-size: 12px;
+  }
+  .follow-us {
+    display: none;
+  }
+  .linkedin-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .email-subscribe-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright-text {
+    position: inherit;
+    margin-top: 20px;
+    font-size: 12px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .btn-sub {
+    margin-top: 10px;
+  }
+  .bubble {
+    width: 25px;
+    height: 25px;
+  }
+  .bubble-desktop-1 {
+    top: -1%;
+    left: -2%;
+  }
+  .bubble-desktop-2 {
+    top: 5%;
+    left: 104%;
+  }
+  .bubble-desktop-3 {
+    top: 70%;
+    left: -3%;
+  }
+  .bubble-desktop-4 {
+    top: 48%;
+    left: 104%;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .form-input {
+    height: 100%;
+  }
+  .body-container {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+  }
+  .body-content-right {
+    padding-left: 13px;
+  }
+  .label-check {
+    font-size: 13px;
+    max-width: 310px;
+  }
+  .checkbox-accept {
+    width: 100%;
+  }
+  .checkbox-accept-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .body-desc-box {
+    font-size: 13px;
+  }
+  .footer-content > div > p {
+    font-size: 11px;
+  }
+  .sub-text > div > p {
+    width: 236px;
+    color: black;
+    font-size: 12px;
+  }
+  .btn-sub {
+    margin-top: 8px;
+  }
+  .email-subscribe-wrapper {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .copyright-text {
+    font-size: 12px;
+    width: 100%;
+  }
+  .footer-content {
+    flex-basis: 25%;
+  }
+  .footer-wrapper > .footer-content:nth-child(1) {
+    flex-basis: 20%;
+  }
+  .bubble-desktop-1 {
+    top: 4%;
+    left: -4%;
+  }
+  .bubble-desktop-2 {
+    display: none;
+  }
+  .bubble-desktop-3 {
+    top: 30%;
+    left: 101%;
+  }
+  .bubble-desktop-4 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .body-desc-box {
+    font-size: 18px;
+  }
+  .text-area {
+    height: 200px !important;
+  }
+  .checkbox-accept {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .bubble {
+    height: 33px;
+    width: 33px;
+  }
+  .bubble-desktop-1 {
+    top: 2%;
+    left: -2%;
+  }
+  .bubble-desktop-2 {
+    top: 75%;
+    left: 0%;
+  }
+  .bubble-desktop-3 {
+    top: 3%;
+    left: 103%;
+  }
+  .bubble-desktop-4 {
+    top: 50%;
+    left: 100%;
+  }
+}
